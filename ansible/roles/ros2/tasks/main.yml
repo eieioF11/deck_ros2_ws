@@ -1,0 +1,63 @@
+---
+- name: Enable universe repository
+  become: yes
+  block:
+    - apt:
+        update_cache: yes
+        name: software-properties-common
+    - shell: add-apt-repository -y universe
+
+- name: Add ROS2 repository
+  become: yes
+  block:
+    - apt_key:
+        url: https://raw.githubusercontent.com/ros/rosdistro/master/ros.key
+        keyring: /usr/share/keyrings/ros-archive-keyring.gpg
+    - apt_repository:
+        repo: deb [arch=amd64 signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu {{ ansible_distribution_release }} main
+
+- name: Install ROS2 Humble
+  become: yes
+  block:
+    - apt:
+        update_cache: yes
+        upgrade: yes
+    - apt:
+        pkg:
+          - ros-humble-desktop
+          - ros-dev-tools
+          - ros-humble-rosbag2-storage-mcap
+
+# Install additional packages
+- name: Install rqt, rviz plagins
+  become: yes
+  block:
+    - apt:
+        update_cache: yes
+        upgrade: yes
+    - apt:
+        pkg:
+          - ros-humble-rqt-*
+          - ros-humble-rviz-*
+
+- name: Install additional packages
+  become: yes
+  block:
+    - apt:
+        update_cache: yes
+        upgrade: yes
+    - apt:
+        pkg:
+          - ros-humble-teleop*
+          - ros-humble-nav2-bringup
+          - ros-humble-diagnostic-updater
+          - ros-humble-vision-msgs
+          - ros-humble-pointcloud-to-laserscan
+
+- name: Enable ccache
+  block:
+    - apt:
+        update_cache: yes
+        name: ccache
+      become: yes
+    - shell: ccache --set-config=max_size=10G

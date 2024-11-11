@@ -1,0 +1,40 @@
+---
+- name: Add my repositories
+  become: yes
+  block:
+    - apt_key:
+        url: https://eieiof11.github.io/ppa/ppa.key
+        keyring: /usr/share/keyrings/f11-apt.gpg
+    - apt_repository:
+        repo: deb [arch=amd64 signed-by=/usr/share/keyrings/f11-apt.gpg] https://eieiof11.github.io/ppa {{ ansible_distribution_release }} main
+
+- name: Setup rosdep
+  become: yes
+  block:
+    - file:
+        path: /etc/ros/rosdep/sources.list.d/20-default.list
+        state: absent
+    - shell: rosdep init
+    - copy:
+        content: "yaml https://eieiof11.github.io/ppa/rosdep.yaml"
+        dest: /etc/ros/rosdep/sources.list.d/99-f11-apt.list
+
+- name: Update rosdep sources
+  shell: rosdep update
+
+- name: Install my packages
+  become: yes
+  block:
+    - apt:
+        update_cache: yes
+        upgrade: yes
+    - apt:
+        pkg:
+          - ros-humble-casadi-ament
+          - ros-humble-jsk*
+          - ros-humble-twist-switcher
+          - ros-humble-extension-node
+          - ros-humble-data-logger
+          - ros-humble-common-utils
+          - livox-sdk2
+          - ros-humble-livox-ros-driver2

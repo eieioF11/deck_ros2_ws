@@ -1,0 +1,172 @@
+---
+# プラグイン
+  - name: Install the package "gedit-plugins"
+    apt:
+      name: gedit-plugins
+    become: yes
+
+  - name: Install the package "gstreamer1.0-plugins-bad"
+    apt:
+      name: gstreamer1.0-plugins-bad
+    become: yes
+#audio
+  - name: Install the package "pavucontrol"
+    apt:
+      name: pavucontrol
+    become: yes
+# mozc
+  - name: Install the package "ibus-mozc"
+    apt:
+      name: ibus-mozc
+    become: yes
+# グラフィックス関連
+  - name: Install the package "intel-opencl-icd"
+    apt:
+      name: intel-opencl-icd
+    become: yes
+# 便利ツール
+  - name: Install the package "tree"
+    apt:
+      name: tree
+    become: yes
+
+  - name: Install the package "curl"
+    apt:
+      name: curl
+    become: yes
+
+  - name: Install the package "vim"
+    apt:
+      name: vim
+    become: yes
+
+  - name: Install the package "pdftk"
+    apt:
+      name: pdftk
+    become: yes
+
+  - name: Install the package "terminator"
+    apt:
+      name: terminator
+    become: yes
+# tmux
+  - name: Install the package "tmux"
+    apt:
+      name: tmux
+    become: yes
+
+  - name: Install the package "gimp"
+    apt:
+      name: gimp
+    become: yes
+
+  # - name: Install the package "simplescreenrecorder"
+  #   apt:
+  #     name: simplescreenrecorder
+  #   become: yes
+
+  - name: Install the package "gtkterm"
+    apt:
+      name: gtkterm
+    become: yes
+
+  - name: Install the package "ffmpeg"
+    apt:
+      name: ffmpeg
+    become: yes
+
+  - name: Install the package "plocate"
+    apt:
+      name: plocate
+    become: yes
+
+  - name: Install the package "vlc"
+    apt:
+      name: vlc
+    become: yes
+#network
+  - name: Install the package "arp-scan"
+    apt:
+      name: arp-scan
+    become: yes
+#logi
+  - name: Install the package "solaar"
+    apt:
+      name: solaar
+    become: yes
+
+  - name: Install the package "piper"
+    apt:
+      name: piper
+    become: yes
+# gnome関連
+  - name: Install the package "gnome-tweaks"
+    apt:
+      name: gnome-tweaks
+    become: yes
+
+  - name: Install the package "gnome-shell-extension-manager"
+    apt:
+      name: gnome-shell-extension-manager
+    become: yes
+# preload
+  - name: Install the package "preload"
+    apt:
+      name: preload
+    become: yes
+# gparted
+  - name: Install the package "gparted"
+    apt:
+      name: gparted
+    become: yes
+# その他 ライブラリ
+  - name: Install the package "libomp-dev"
+    apt:
+      name: libomp-dev
+    become: yes
+
+  - name: Install the package "libboost-all-dev"
+    apt:
+      name: libboost-all-dev
+    become: yes
+
+  - name: Install the package "libmetis-dev"
+    apt:
+      name: libmetis-dev
+    become: yes
+
+  - name: Install the package "libfmt-dev"
+    apt:
+      name: libfmt-dev
+    become: yes
+
+  - name: Install the package "libspdlog-dev"
+    apt:
+      name: libspdlog-dev
+    become: yes
+
+  - name: Install the package "libglm-dev"
+    apt:
+      name: libglm-dev
+    become: yes
+
+  - name: Install the package "libglfw3-dev"
+    apt:
+      name: libglfw3-dev
+    become: yes
+
+  - name: Install the package "libpng-dev"
+    apt:
+      name: libpng-dev
+    become: yes
+
+  - name: Install the package "libjpeg-dev"
+    apt:
+      name: libjpeg-dev
+    become: yes
+
+  - name: Install the package "nlohmann-json3-dev"
+    apt:
+      name: nlohmann-json3-dev
+    become: yes
+

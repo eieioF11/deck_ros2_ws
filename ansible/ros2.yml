@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  roles:
+    - ros2
+    - bashrc

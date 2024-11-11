@@ -1,0 +1,103 @@
+---
+- name: Update ~/.bashrc
+  blockinfile:
+    dest: "{{ ansible_env.HOME }}/.bashrc"
+    block: |
+      # Color
+      FMT_BOLD="\[\e[1m\]"
+      FMT_DIM="\[\e[2m\]"
+      FMT_RESET="\[\e[0m\]"
+      FMT_UNBOLD="\[\e[22m\]"
+      FMT_UNDIM="\[\e[22m\]"
+      FG_BLACK="\[\e[30m\]"
+      FG_BLUE="\[\e[34m\]"
+      FG_CYAN="\[\e[36m\]"
+      FG_GREEN="\[\e[32m\]"
+      FG_GREY="\[\e[37m\]"
+      FG_MAGENTA="\[\e[35m\]"
+      FG_RED="\[\e[31m\]"
+      FG_WHITE="\[\e[97m\]"
+      FG_YELLOW="\[\e[33m\]"
+      BG_GREY="\[\e[100m\]"
+      BG_BLACK="\[\e[40m\]"
+      BG_BLUE="\[\e[44m\]"
+      BG_CYAN="\[\e[46m\]"
+      BG_GREEN="\[\e[42m\]"
+      BG_MAGENTA="\[\e[45m\]"
+      BG_RED="\[\e[41m\]"
+      BG_YELLOW="\[\e[43m\]"
+      export ros_env_name=""
+      function parse_git_count() { # count untracked files
+          expr $(git status --porcelain 2>/dev/null | grep -E "^ M|^??|^ D" | wc -l)
+      }
+      function parse_git_fg() { # change color between clean/dirty tree
+        if git rev-parse --git-dir > /dev/null 2>&1; then
+          [[ $(git status -s 2>/dev/null) ]] && echo -e "🔀 $(parse_git_count)" || echo -e "✅ 0"
+        else
+          echo -e ""
+        fi;
+      }
+      function branch_name(){
+        if git rev-parse --git-dir > /dev/null 2>&1; then
+          echo -e "$(git rev-parse --abbrev-ref HEAD)"
+        else
+          echo -e ""
+        fi;
+      }
+      #ghコマンド
+      eval "$(gh completion -s bash)"
+      #ros2
+      source /opt/ros/humble/setup.bash
+      #workspase setup
+      alias deck_ros2_ws='
+          export ros_env_name="deck_ros2_ws"
+          export ROS_WORKSPACE=${HOME}/deck_ros2_ws;
+        '
+      #cd
+      function ros_src() {
+        cd $ROS_WORKSPACE/src;
+      }
+      function ros_ws() {
+        cd $ROS_WORKSPACE;
+      }
+      #build
+      function ros_make() {
+        dir=$PWD;
+        cd $ROS_WORKSPACE;
+        if [ $# -gt 0 ]; then
+          colcon build --packages-select $1 --symlink-install --cmake-args -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_BUILD_TYPE=RelWithDebInfo;
+        else
+          colcon build --symlink-install --cmake-args -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_BUILD_TYPE=RelWithDebInfo;
+        fi;
+        source install/setup.bash
+        cd $dir;
+      }
+      function ros_make_clean() {
+        dir=$PWD;
+        cd $ROS_WORKSPACE;
+        if [ $# -gt 0 ]; then
+          colcon build --packages-select $1 --symlink-install --cmake-clean-cache --cmake-args -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_BUILD_TYPE=RelWithDebInfo;
+        else
+          colcon build --symlink-install --cmake-clean-cache --cmake-args -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_BUILD_TYPE=RelWithDebInfo;
+        fi;
+        source install/setup.bash
+        cd $dir;
+      }
+      function ros_domain() {
+        if [ $# -gt 0 ]; then
+          export ROS_DOMAIN_ID=$1;
+        else
+          echo 'ROS_DOMAIN_ID='$ROS_DOMAIN_ID;
+        fi;
+      }
+      #default workspace
+      deck_ros2_ws
+      #common
+      source ${ROS_WORKSPACE}/install/local_setup.bash;
+      export ROS_DOMAIN_ID=0;
+      #export ROS_LOCALHOST_ONLY=1;
+      export RCUTILS_COLORIZED_OUTPUT=1
+      source /usr/share/colcon_cd/function/colcon_cd.sh
+      export _colcon_cd_root=~/
+      #terminal settings
+      export PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}${FMT_RESET}${FMT_BOLD}${FG_GREEN}\u@\h${FMT_UNBOLD}${FG_BLUE}<${FMT_BOLD}\${ros_env_name}${FMT_UNBOLD}>${FG_WHITE}${FMT_UNBOLD}[${FG_CYAN}${FMT_BOLD}\$(branch_name)${FG_WHITE}\$(parse_git_fg)${FG_WHITE}${FMT_UNBOLD}]${FG_WHITE}:${FG_BLUE}\w${FMT_BOLD}${FG_WHITE}\$ ${FMT_RESET}"

@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  roles:
+    - ubuntu
+    - ros2
+    - my_ros2_pkg
+    - bashrc
