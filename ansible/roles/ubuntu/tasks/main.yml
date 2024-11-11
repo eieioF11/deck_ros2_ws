@@ -1,7 +1,5 @@
 ---
-  - include_tasks: genome.yml
   - include_tasks: apt/install_packages.yml
   - include_tasks: apt/install_python3.yml
-  # - include_tasks: apt/install_ssh.yml
 
 

@@ -1,0 +1,10 @@
+In file included from [01m[K/home/deck/deck_ros2_ws/src/manual_controller/src/manual_controller_component.cpp:3[m[K:
+[01m[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:[m[K In member function ‘[01m[KT ManualController::param(const string&, const T&) [with T = double][m[K’:
+[01m[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:229:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  229 |     return [01;35m[Kvalue[m[K;
+      |            [01;35m[K^~~~~[m[K
+In file included from [01m[K/home/deck/deck_ros2_ws/src/manual_controller/src/main.cpp:2[m[K:
+[01m[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:[m[K In member function ‘[01m[KT ManualController::param(const string&, const T&) [with T = double][m[K’:
+[01m[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:229:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  229 |     return [01;35m[Kvalue[m[K;
+      |            [01;35m[K^~~~~[m[K

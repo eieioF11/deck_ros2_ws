@@ -1,0 +1,41 @@
+[35m[1mConsolidate compiler generated dependencies of target manual_controller_component[0m
+[ 50%] Built target manual_controller_component
+[35m[1mConsolidate compiler generated dependencies of target manual_controller[0m
+[100%] Built target manual_controller
+-- Install configuration: "RelWithDebInfo"
+-- Execute custom install script
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/manual_controller_param.yaml
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/steamdeck_manual_controller_param.yaml
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/twist_switcher_param.yaml
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/controller.launch.py
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/steamdeck.launch.py
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/steamdeck_aisl.launch.py
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//rviz/deck.rviz
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/controller.hpp
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/logi_xbox.hpp
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/ps4.hpp
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/steamdeck.hpp
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/manual_controller_component.hpp
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/library_path.sh
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/library_path.dsv
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/lib/libmanual_controller_component.so
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/lib/manual_controller/manual_controller
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/package_run_dependencies/manual_controller
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/parent_prefix_path/manual_controller
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/path.sh
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/path.dsv
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.bash
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.sh
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.zsh
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.dsv
+-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/package.dsv
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/packages/manual_controller
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/rclcpp_components/manual_controller
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/manual_controllerConfig.cmake
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/manual_controllerConfig-version.cmake
+-- Up-to-date symlink: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/package.xml

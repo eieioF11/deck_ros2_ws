@@ -1,0 +1,92 @@
+[0.025s] Invoking command in '/home/deck/deck_ros2_ws/build/manual_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/deck/deck_ros2_ws/src/manual_controller -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/deck/deck_ros2_ws/install/manual_controller
+[0.304s] -- The C compiler identification is GNU 11.4.0
+[0.454s] -- The CXX compiler identification is GNU 11.4.0
+[0.474s] -- Detecting C compiler ABI info
+[0.652s] -- Detecting C compiler ABI info - done
+[0.665s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.666s] -- Detecting C compile features
+[0.667s] -- Detecting C compile features - done
+[0.675s] -- Detecting CXX compiler ABI info
+[0.867s] -- Detecting CXX compiler ABI info - done
+[0.885s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.886s] -- Detecting CXX compile features
+[0.887s] -- Detecting CXX compile features - done
+[0.904s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.220s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.344s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.702s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.723s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.750s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.795s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.851s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.012s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.025s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.366s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.421s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.501s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.530s] -- Looking for pthread.h
+[2.725s] -- Looking for pthread.h - found
+[2.725s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.910s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.913s] -- Found Threads: TRUE  
+[3.305s] -- Configuring done
+[3.353s] -- Generating done
+[3.356s] -- Build files have been written to: /home/deck/deck_ros2_ws/build/manual_controller
+[3.372s] Invoked command in '/home/deck/deck_ros2_ws/build/manual_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/deck/deck_ros2_ws/src/manual_controller -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/deck/deck_ros2_ws/install/manual_controller
+[3.376s] Invoking command in '/home/deck/deck_ros2_ws/build/manual_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/deck/deck_ros2_ws/build/manual_controller -- -j8 -l8
+[3.536s] [ 25%] [32mBuilding CXX object CMakeFiles/manual_controller_component.dir/src/manual_controller_component.cpp.o[0m
+[26.192s] In file included from [01m[K/home/deck/deck_ros2_ws/src/manual_controller/src/manual_controller_component.cpp:3[m[K:
+[26.192s] [01m[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:[m[K In member function ‘[01m[KT ManualController::param(const string&, const T&) [with T = double][m[K’:
+[26.192s] [01m[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:229:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[26.192s]   229 |     return [01;35m[Kvalue[m[K;
+[26.193s]       |            [01;35m[K^~~~~[m[K
+[26.231s] [ 50%] [32m[1mLinking CXX shared library libmanual_controller_component.so[0m
+[26.655s] [ 50%] Built target manual_controller_component
+[26.701s] [ 75%] [32mBuilding CXX object CMakeFiles/manual_controller.dir/src/main.cpp.o[0m
+[51.089s] In file included from [01m[K/home/deck/deck_ros2_ws/src/manual_controller/src/main.cpp:2[m[K:
+[51.090s] [01m[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:[m[K In member function ‘[01m[KT ManualController::param(const string&, const T&) [with T = double][m[K’:
+[51.090s] [01m[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:229:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[51.090s]   229 |     return [01;35m[Kvalue[m[K;
+[51.090s]       |            [01;35m[K^~~~~[m[K
+[51.125s] [100%] [32m[1mLinking CXX executable manual_controller[0m
+[51.658s] [100%] Built target manual_controller
+[51.680s] Invoked command in '/home/deck/deck_ros2_ws/build/manual_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/deck/deck_ros2_ws/build/manual_controller -- -j8 -l8
+[51.762s] Invoking command in '/home/deck/deck_ros2_ws/build/manual_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/deck/deck_ros2_ws/build/manual_controller
+[51.780s] -- Install configuration: "RelWithDebInfo"
+[51.780s] -- Execute custom install script
+[51.782s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/manual_controller_param.yaml
+[51.806s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/steamdeck_manual_controller_param.yaml
+[51.831s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/twist_switcher_param.yaml
+[51.852s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/controller.launch.py
+[51.872s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/steamdeck.launch.py
+[51.892s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/steamdeck_aisl.launch.py
+[51.912s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//rviz/deck.rviz
+[51.933s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/controller.hpp
+[51.952s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/logi_xbox.hpp
+[51.970s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/ps4.hpp
+[51.992s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/steamdeck.hpp
+[52.016s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/manual_controller_component.hpp
+[52.045s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/library_path.sh
+[52.068s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/library_path.dsv
+[52.097s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/lib/libmanual_controller_component.so
+[52.117s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/lib/manual_controller/manual_controller
+[52.137s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/package_run_dependencies/manual_controller
+[52.156s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/parent_prefix_path/manual_controller
+[52.175s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/ament_prefix_path.sh
+[52.194s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/ament_prefix_path.dsv
+[52.211s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/path.sh
+[52.229s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/path.dsv
+[52.248s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.bash
+[52.266s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.sh
+[52.283s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.zsh
+[52.300s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.dsv
+[52.319s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/package.dsv
+[52.337s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/packages/manual_controller
+[52.358s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/rclcpp_components/manual_controller
+[52.379s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[52.399s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[52.418s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[52.435s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/manual_controllerConfig.cmake
+[52.453s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/manual_controllerConfig-version.cmake
+[52.470s] -- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/package.xml
+[52.490s] Invoked command in '/home/deck/deck_ros2_ws/build/manual_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/deck/deck_ros2_ws/build/manual_controller

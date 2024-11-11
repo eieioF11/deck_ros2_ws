@@ -1,0 +1,1 @@
+/home/deck/deck_ros2_ws/build/manual_controller/ament_cmake_core/manual_controllerConfig.cmake

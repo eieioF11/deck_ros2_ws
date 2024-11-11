@@ -1,4 +1,0 @@
----
-  - command: gsettings set org.gnome.desktop.input-sources xkb-options "['terminate:ctrl_alt_bksp', 'shift:both_capslock']"
-  - command: gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
-  - command: gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']"

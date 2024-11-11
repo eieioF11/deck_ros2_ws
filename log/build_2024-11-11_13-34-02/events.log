@@ -1,0 +1,623 @@
+[0.000000] (-) TimerEvent: {}
+[0.000285] (manual_controller) JobQueued: {'identifier': 'manual_controller', 'dependencies': OrderedDict()}
+[0.000334] (manual_controller) JobStarted: {'identifier': 'manual_controller'}
+[0.023253] (manual_controller) JobProgress: {'identifier': 'manual_controller', 'progress': 'cmake'}
+[0.023874] (manual_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/deck/deck_ros2_ws/src/manual_controller', '-DCMAKE_C_COMPILER_LAUNCHER=ccache', '-DCMAKE_CXX_COMPILER_LAUNCHER=ccache', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/deck/deck_ros2_ws/install/manual_controller'], 'cwd': '/home/deck/deck_ros2_ws/build/manual_controller', 'env': OrderedDict([('PROFILEHOME', ''), ('KDE_FULL_SESSION', 'true'), ('MAIL', '/var/mail/deck'), ('LANGUAGE', ''), ('USER', 'deck'), ('HOSTNAME', 'ubuntu-22-04.steamdeck'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '230805'), ('XDG_CACHE_HOME', '/home/deck/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/deck/.local/coinhsl_vendor/lib:/home/deck/ros2_ws/install/twist_switcher/lib:/home/deck/ros2_ws/install/manual_controller/lib:/home/deck/ros2_ws/install/f11robo_bridge/lib:/home/deck/ros2_ws/install/extension_msgs/lib:/home/deck/.local/coinhsl_vendor/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/deck'), ('MOZ_ENABLE_WAYLAND', '1'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/deck/deck_ros2_ws'), ('DESKTOP_SESSION', 'plasma-steamos-oneshot'), ('PIPEWIRE_RUNTIME_DIR', '/dev/null'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/deck/.gtkrc:/home/deck/.config/gtkrc'), ('GTK_MODULES', 'canberra-gtk-module'), ('KDE_SESSION_VERSION', '5'), ('PS1', '\\[\\e]0;\\u@\\h: \\w\\a\\]\\[\\e[0m\\]\\[\\e[1m\\]\\[\\e[32m\\]\\u@\\h\\[\\e[22m\\]\\[\\e[34m\\]<\\[\\e[1m\\]${ros_env_name}\\[\\e[22m\\]>\\[\\e[97m\\]\\[\\e[22m\\][\\[\\e[36m\\]\\[\\e[1m\\]$(branch_name)\\[\\e[97m\\]$(parse_git_fg)\\[\\e[97m\\]\\[\\e[22m\\]]\\[\\e[97m\\]:\\[\\e[34m\\]\\w\\[\\e[1m\\]\\[\\e[97m\\]$ \\[\\e[0m\\]'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('MANAGERPID', '990'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '5019'), ('XDG_STATE_HOME', '/home/deck/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('_colcon_cd_root', '/home/deck/'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('COLCON_PREFIX_PATH', '/home/deck/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'deck'), ('WINDOWID', '104857613'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('JOURNAL_STREAM', '8:73275'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('MEMORY_PRESSURE_WATCH', '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure'), ('XDG_SESSION_CLASS', 'user'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('ros_env_name', 'deck_ros2_ws'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/deck/.gtkrc-2.0:/home/deck/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/steamdeck:@/tmp/.ICE-unix/4958,unix/steamdeck:/tmp/.ICE-unix/4958'), ('INVOCATION_ID', '2b885411df544ea7b6b6a41ce30dc0d4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('XDG_DATA_HOME', '/home/deck/.local/share'), ('XDG_CONFIG_HOME', '/home/deck/.config'), ('LIBVA_DRIVER_NAME', 'radeonsi'), ('XAUTHORITY', '/run/user/1000/e5f63b8a-a411-4a19-a02f-58d8a952b6db'), ('MOZ_USE_XINPUT2', '1'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/deck/ros2_ws/install/twist_switcher:/home/deck/ros2_ws/install/manual_controller:/home/deck/ros2_ws/install/ign_gazebo_sim:/home/deck/ros2_ws/install/f11robo_bridge:/home/deck/ros2_ws/install/data_logger:/home/deck/ros2_ws/install/extension_node:/home/deck/ros2_ws/install/extension_msgs:/home/deck/ros2_ws/install/extension_ament_node:/home/deck/ros2_ws/install/extension_ament:/home/deck/ros2_ws/install/common_lib:/home/deck/ros2_ws/install/ament_cmake_auto_mod'), ('SHELL', '/usr/bin/bash'), ('DRACUT_NO_XATTR', '1'), ('KONSOLE_DBUS_SERVICE', ':1.101'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/deck/deck_ros2_ws/build/manual_controller'), ('CONTAINER_ID', 'ubuntu-22-04'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/home/deck/.config/kdedefaults:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/home/deck/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/deck/ros2_ws/install/extension_msgs/local/lib/python3.10/dist-packages'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('MEMORY_PRESSURE_WRITE', 'c29tZSAyMDAwMDAgMjAwMDAwMAA='), ('ROS_WORKSPACE', '/home/deck/deck_ros2_ws'), ('EDITOR', 'vim'), ('CMAKE_PREFIX_PATH', '/home/deck/ros2_ws/install/twist_switcher:/home/deck/ros2_ws/install/manual_controller:/home/deck/ros2_ws/install/ign_gazebo_sim:/home/deck/ros2_ws/install/f11robo_bridge:/home/deck/ros2_ws/install/data_logger:/home/deck/ros2_ws/install/extension_node:/home/deck/ros2_ws/install/extension_msgs:/home/deck/ros2_ws/install/extension_ament_node:/home/deck/ros2_ws/install/extension_ament:/home/deck/ros2_ws/install/common_lib:/home/deck/ros2_ws/install/ament_cmake_auto_mod:/opt/ros/humble')]), 'shell': False}
+[0.098751] (-) TimerEvent: {}
+[0.199122] (-) TimerEvent: {}
+[0.299563] (-) TimerEvent: {}
+[0.304494] (manual_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.399733] (-) TimerEvent: {}
+[0.454273] (manual_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.474482] (manual_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.499894] (-) TimerEvent: {}
+[0.600358] (-) TimerEvent: {}
+[0.651673] (manual_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.664907] (manual_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.665882] (manual_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.667533] (manual_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.675089] (manual_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.700522] (-) TimerEvent: {}
+[0.801013] (-) TimerEvent: {}
+[0.866986] (manual_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.885072] (manual_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.885819] (manual_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.886959] (manual_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.901138] (-) TimerEvent: {}
+[0.903958] (manual_controller) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[1.001302] (-) TimerEvent: {}
+[1.101801] (-) TimerEvent: {}
+[1.202243] (-) TimerEvent: {}
+[1.219799] (manual_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.302399] (-) TimerEvent: {}
+[1.343999] (manual_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.402541] (-) TimerEvent: {}
+[1.502978] (-) TimerEvent: {}
+[1.603444] (-) TimerEvent: {}
+[1.701830] (manual_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.703531] (-) TimerEvent: {}
+[1.723250] (manual_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.750115] (manual_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.794923] (manual_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.803696] (-) TimerEvent: {}
+[1.850983] (manual_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.903830] (-) TimerEvent: {}
+[2.004325] (-) TimerEvent: {}
+[2.012039] (manual_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.024878] (manual_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.104488] (-) TimerEvent: {}
+[2.204958] (-) TimerEvent: {}
+[2.305429] (-) TimerEvent: {}
+[2.365915] (manual_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.405597] (-) TimerEvent: {}
+[2.421349] (manual_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.501126] (manual_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.505736] (-) TimerEvent: {}
+[2.530539] (manual_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.605876] (-) TimerEvent: {}
+[2.706289] (-) TimerEvent: {}
+[2.725294] (manual_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.725712] (manual_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.806435] (-) TimerEvent: {}
+[2.906841] (-) TimerEvent: {}
+[2.910028] (manual_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.913000] (manual_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.006987] (-) TimerEvent: {}
+[3.107403] (-) TimerEvent: {}
+[3.207844] (-) TimerEvent: {}
+[3.304992] (manual_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.307939] (-) TimerEvent: {}
+[3.353035] (manual_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[3.356364] (manual_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/deck/deck_ros2_ws/build/manual_controller\n'}
+[3.371805] (manual_controller) CommandEnded: {'returncode': 0}
+[3.372812] (manual_controller) JobProgress: {'identifier': 'manual_controller', 'progress': 'build'}
+[3.375198] (manual_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/deck/deck_ros2_ws/build/manual_controller', '--', '-j8', '-l8'], 'cwd': '/home/deck/deck_ros2_ws/build/manual_controller', 'env': OrderedDict([('PROFILEHOME', ''), ('KDE_FULL_SESSION', 'true'), ('MAIL', '/var/mail/deck'), ('LANGUAGE', ''), ('USER', 'deck'), ('HOSTNAME', 'ubuntu-22-04.steamdeck'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '230805'), ('XDG_CACHE_HOME', '/home/deck/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/deck/.local/coinhsl_vendor/lib:/home/deck/ros2_ws/install/twist_switcher/lib:/home/deck/ros2_ws/install/manual_controller/lib:/home/deck/ros2_ws/install/f11robo_bridge/lib:/home/deck/ros2_ws/install/extension_msgs/lib:/home/deck/.local/coinhsl_vendor/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/deck'), ('MOZ_ENABLE_WAYLAND', '1'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/deck/deck_ros2_ws'), ('DESKTOP_SESSION', 'plasma-steamos-oneshot'), ('PIPEWIRE_RUNTIME_DIR', '/dev/null'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/deck/.gtkrc:/home/deck/.config/gtkrc'), ('GTK_MODULES', 'canberra-gtk-module'), ('KDE_SESSION_VERSION', '5'), ('PS1', '\\[\\e]0;\\u@\\h: \\w\\a\\]\\[\\e[0m\\]\\[\\e[1m\\]\\[\\e[32m\\]\\u@\\h\\[\\e[22m\\]\\[\\e[34m\\]<\\[\\e[1m\\]${ros_env_name}\\[\\e[22m\\]>\\[\\e[97m\\]\\[\\e[22m\\][\\[\\e[36m\\]\\[\\e[1m\\]$(branch_name)\\[\\e[97m\\]$(parse_git_fg)\\[\\e[97m\\]\\[\\e[22m\\]]\\[\\e[97m\\]:\\[\\e[34m\\]\\w\\[\\e[1m\\]\\[\\e[97m\\]$ \\[\\e[0m\\]'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('MANAGERPID', '990'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '5019'), ('XDG_STATE_HOME', '/home/deck/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('_colcon_cd_root', '/home/deck/'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('COLCON_PREFIX_PATH', '/home/deck/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'deck'), ('WINDOWID', '104857613'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('JOURNAL_STREAM', '8:73275'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('MEMORY_PRESSURE_WATCH', '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure'), ('XDG_SESSION_CLASS', 'user'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('ros_env_name', 'deck_ros2_ws'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/deck/.gtkrc-2.0:/home/deck/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/steamdeck:@/tmp/.ICE-unix/4958,unix/steamdeck:/tmp/.ICE-unix/4958'), ('INVOCATION_ID', '2b885411df544ea7b6b6a41ce30dc0d4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('XDG_DATA_HOME', '/home/deck/.local/share'), ('XDG_CONFIG_HOME', '/home/deck/.config'), ('LIBVA_DRIVER_NAME', 'radeonsi'), ('XAUTHORITY', '/run/user/1000/e5f63b8a-a411-4a19-a02f-58d8a952b6db'), ('MOZ_USE_XINPUT2', '1'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/deck/ros2_ws/install/twist_switcher:/home/deck/ros2_ws/install/manual_controller:/home/deck/ros2_ws/install/ign_gazebo_sim:/home/deck/ros2_ws/install/f11robo_bridge:/home/deck/ros2_ws/install/data_logger:/home/deck/ros2_ws/install/extension_node:/home/deck/ros2_ws/install/extension_msgs:/home/deck/ros2_ws/install/extension_ament_node:/home/deck/ros2_ws/install/extension_ament:/home/deck/ros2_ws/install/common_lib:/home/deck/ros2_ws/install/ament_cmake_auto_mod'), ('SHELL', '/usr/bin/bash'), ('DRACUT_NO_XATTR', '1'), ('KONSOLE_DBUS_SERVICE', ':1.101'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/deck/deck_ros2_ws/build/manual_controller'), ('CONTAINER_ID', 'ubuntu-22-04'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/home/deck/.config/kdedefaults:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/home/deck/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/deck/ros2_ws/install/extension_msgs/local/lib/python3.10/dist-packages'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('MEMORY_PRESSURE_WRITE', 'c29tZSAyMDAwMDAgMjAwMDAwMAA='), ('ROS_WORKSPACE', '/home/deck/deck_ros2_ws'), ('EDITOR', 'vim'), ('CMAKE_PREFIX_PATH', '/home/deck/ros2_ws/install/twist_switcher:/home/deck/ros2_ws/install/manual_controller:/home/deck/ros2_ws/install/ign_gazebo_sim:/home/deck/ros2_ws/install/f11robo_bridge:/home/deck/ros2_ws/install/data_logger:/home/deck/ros2_ws/install/extension_node:/home/deck/ros2_ws/install/extension_msgs:/home/deck/ros2_ws/install/extension_ament_node:/home/deck/ros2_ws/install/extension_ament:/home/deck/ros2_ws/install/common_lib:/home/deck/ros2_ws/install/ament_cmake_auto_mod:/opt/ros/humble')]), 'shell': False}
+[3.408110] (-) TimerEvent: {}
+[3.508574] (-) TimerEvent: {}
+[3.536082] (manual_controller) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/manual_controller_component.dir/src/manual_controller_component.cpp.o\x1b[0m\n'}
+[3.608732] (-) TimerEvent: {}
+[3.709177] (-) TimerEvent: {}
+[3.809606] (-) TimerEvent: {}
+[3.910010] (-) TimerEvent: {}
+[4.010394] (-) TimerEvent: {}
+[4.110806] (-) TimerEvent: {}
+[4.211232] (-) TimerEvent: {}
+[4.311688] (-) TimerEvent: {}
+[4.412115] (-) TimerEvent: {}
+[4.512563] (-) TimerEvent: {}
+[4.613022] (-) TimerEvent: {}
+[4.713412] (-) TimerEvent: {}
+[4.813819] (-) TimerEvent: {}
+[4.914284] (-) TimerEvent: {}
+[5.014650] (-) TimerEvent: {}
+[5.115053] (-) TimerEvent: {}
+[5.215541] (-) TimerEvent: {}
+[5.315984] (-) TimerEvent: {}
+[5.416478] (-) TimerEvent: {}
+[5.516952] (-) TimerEvent: {}
+[5.617439] (-) TimerEvent: {}
+[5.717914] (-) TimerEvent: {}
+[5.818388] (-) TimerEvent: {}
+[5.918784] (-) TimerEvent: {}
+[6.019239] (-) TimerEvent: {}
+[6.119683] (-) TimerEvent: {}
+[6.220122] (-) TimerEvent: {}
+[6.320567] (-) TimerEvent: {}
+[6.421040] (-) TimerEvent: {}
+[6.521483] (-) TimerEvent: {}
+[6.621939] (-) TimerEvent: {}
+[6.722381] (-) TimerEvent: {}
+[6.822818] (-) TimerEvent: {}
+[6.923274] (-) TimerEvent: {}
+[7.023700] (-) TimerEvent: {}
+[7.124145] (-) TimerEvent: {}
+[7.224533] (-) TimerEvent: {}
+[7.324929] (-) TimerEvent: {}
+[7.425681] (-) TimerEvent: {}
+[7.526115] (-) TimerEvent: {}
+[7.626565] (-) TimerEvent: {}
+[7.727011] (-) TimerEvent: {}
+[7.827421] (-) TimerEvent: {}
+[7.927856] (-) TimerEvent: {}
+[8.028308] (-) TimerEvent: {}
+[8.128755] (-) TimerEvent: {}
+[8.229207] (-) TimerEvent: {}
+[8.329656] (-) TimerEvent: {}
+[8.430122] (-) TimerEvent: {}
+[8.530576] (-) TimerEvent: {}
+[8.631060] (-) TimerEvent: {}
+[8.731509] (-) TimerEvent: {}
+[8.831947] (-) TimerEvent: {}
+[8.932399] (-) TimerEvent: {}
+[9.032858] (-) TimerEvent: {}
+[9.133372] (-) TimerEvent: {}
+[9.233782] (-) TimerEvent: {}
+[9.334291] (-) TimerEvent: {}
+[9.434752] (-) TimerEvent: {}
+[9.535217] (-) TimerEvent: {}
+[9.635688] (-) TimerEvent: {}
+[9.736158] (-) TimerEvent: {}
+[9.836621] (-) TimerEvent: {}
+[9.937090] (-) TimerEvent: {}
+[10.037555] (-) TimerEvent: {}
+[10.138000] (-) TimerEvent: {}
+[10.238435] (-) TimerEvent: {}
+[10.338829] (-) TimerEvent: {}
+[10.439205] (-) TimerEvent: {}
+[10.539662] (-) TimerEvent: {}
+[10.640121] (-) TimerEvent: {}
+[10.740581] (-) TimerEvent: {}
+[10.841024] (-) TimerEvent: {}
+[10.941397] (-) TimerEvent: {}
+[11.041822] (-) TimerEvent: {}
+[11.142256] (-) TimerEvent: {}
+[11.242695] (-) TimerEvent: {}
+[11.343125] (-) TimerEvent: {}
+[11.443561] (-) TimerEvent: {}
+[11.544039] (-) TimerEvent: {}
+[11.644484] (-) TimerEvent: {}
+[11.744926] (-) TimerEvent: {}
+[11.845357] (-) TimerEvent: {}
+[11.945771] (-) TimerEvent: {}
+[12.046142] (-) TimerEvent: {}
+[12.146554] (-) TimerEvent: {}
+[12.246996] (-) TimerEvent: {}
+[12.347415] (-) TimerEvent: {}
+[12.447842] (-) TimerEvent: {}
+[12.548285] (-) TimerEvent: {}
+[12.648746] (-) TimerEvent: {}
+[12.749223] (-) TimerEvent: {}
+[12.849637] (-) TimerEvent: {}
+[12.950037] (-) TimerEvent: {}
+[13.050489] (-) TimerEvent: {}
+[13.150973] (-) TimerEvent: {}
+[13.251404] (-) TimerEvent: {}
+[13.351835] (-) TimerEvent: {}
+[13.452281] (-) TimerEvent: {}
+[13.552768] (-) TimerEvent: {}
+[13.653182] (-) TimerEvent: {}
+[13.753541] (-) TimerEvent: {}
+[13.854063] (-) TimerEvent: {}
+[13.954518] (-) TimerEvent: {}
+[14.054948] (-) TimerEvent: {}
+[14.155385] (-) TimerEvent: {}
+[14.255828] (-) TimerEvent: {}
+[14.356275] (-) TimerEvent: {}
+[14.456612] (-) TimerEvent: {}
+[14.556982] (-) TimerEvent: {}
+[14.657404] (-) TimerEvent: {}
+[14.757885] (-) TimerEvent: {}
+[14.858312] (-) TimerEvent: {}
+[14.958775] (-) TimerEvent: {}
+[15.059331] (-) TimerEvent: {}
+[15.159816] (-) TimerEvent: {}
+[15.260255] (-) TimerEvent: {}
+[15.360721] (-) TimerEvent: {}
+[15.461197] (-) TimerEvent: {}
+[15.561704] (-) TimerEvent: {}
+[15.662121] (-) TimerEvent: {}
+[15.762451] (-) TimerEvent: {}
+[15.862843] (-) TimerEvent: {}
+[15.963276] (-) TimerEvent: {}
+[16.063681] (-) TimerEvent: {}
+[16.164107] (-) TimerEvent: {}
+[16.264536] (-) TimerEvent: {}
+[16.365002] (-) TimerEvent: {}
+[16.465409] (-) TimerEvent: {}
+[16.565778] (-) TimerEvent: {}
+[16.666207] (-) TimerEvent: {}
+[16.766685] (-) TimerEvent: {}
+[16.867093] (-) TimerEvent: {}
+[16.967442] (-) TimerEvent: {}
+[17.067807] (-) TimerEvent: {}
+[17.168209] (-) TimerEvent: {}
+[17.268541] (-) TimerEvent: {}
+[17.368881] (-) TimerEvent: {}
+[17.469243] (-) TimerEvent: {}
+[17.569801] (-) TimerEvent: {}
+[17.670237] (-) TimerEvent: {}
+[17.770645] (-) TimerEvent: {}
+[17.871018] (-) TimerEvent: {}
+[17.971425] (-) TimerEvent: {}
+[18.071789] (-) TimerEvent: {}
+[18.172200] (-) TimerEvent: {}
+[18.272587] (-) TimerEvent: {}
+[18.373021] (-) TimerEvent: {}
+[18.473452] (-) TimerEvent: {}
+[18.573849] (-) TimerEvent: {}
+[18.674303] (-) TimerEvent: {}
+[18.774657] (-) TimerEvent: {}
+[18.875011] (-) TimerEvent: {}
+[18.975411] (-) TimerEvent: {}
+[19.075744] (-) TimerEvent: {}
+[19.176113] (-) TimerEvent: {}
+[19.276463] (-) TimerEvent: {}
+[19.376892] (-) TimerEvent: {}
+[19.477347] (-) TimerEvent: {}
+[19.577777] (-) TimerEvent: {}
+[19.678208] (-) TimerEvent: {}
+[19.778532] (-) TimerEvent: {}
+[19.878969] (-) TimerEvent: {}
+[19.979384] (-) TimerEvent: {}
+[20.079818] (-) TimerEvent: {}
+[20.180243] (-) TimerEvent: {}
+[20.280752] (-) TimerEvent: {}
+[20.381156] (-) TimerEvent: {}
+[20.481524] (-) TimerEvent: {}
+[20.581992] (-) TimerEvent: {}
+[20.682439] (-) TimerEvent: {}
+[20.782889] (-) TimerEvent: {}
+[20.883301] (-) TimerEvent: {}
+[20.983726] (-) TimerEvent: {}
+[21.084165] (-) TimerEvent: {}
+[21.184576] (-) TimerEvent: {}
+[21.285055] (-) TimerEvent: {}
+[21.385390] (-) TimerEvent: {}
+[21.485723] (-) TimerEvent: {}
+[21.586355] (-) TimerEvent: {}
+[21.686793] (-) TimerEvent: {}
+[21.787286] (-) TimerEvent: {}
+[21.887724] (-) TimerEvent: {}
+[21.988083] (-) TimerEvent: {}
+[22.088527] (-) TimerEvent: {}
+[22.188955] (-) TimerEvent: {}
+[22.289464] (-) TimerEvent: {}
+[22.389921] (-) TimerEvent: {}
+[22.490467] (-) TimerEvent: {}
+[22.590942] (-) TimerEvent: {}
+[22.691500] (-) TimerEvent: {}
+[22.791981] (-) TimerEvent: {}
+[22.892411] (-) TimerEvent: {}
+[22.992893] (-) TimerEvent: {}
+[23.093366] (-) TimerEvent: {}
+[23.193848] (-) TimerEvent: {}
+[23.294449] (-) TimerEvent: {}
+[23.395078] (-) TimerEvent: {}
+[23.495575] (-) TimerEvent: {}
+[23.596006] (-) TimerEvent: {}
+[23.696489] (-) TimerEvent: {}
+[23.797047] (-) TimerEvent: {}
+[23.897564] (-) TimerEvent: {}
+[23.998056] (-) TimerEvent: {}
+[24.098490] (-) TimerEvent: {}
+[24.198894] (-) TimerEvent: {}
+[24.299354] (-) TimerEvent: {}
+[24.399816] (-) TimerEvent: {}
+[24.500254] (-) TimerEvent: {}
+[24.600716] (-) TimerEvent: {}
+[24.701060] (-) TimerEvent: {}
+[24.801454] (-) TimerEvent: {}
+[24.901821] (-) TimerEvent: {}
+[25.002260] (-) TimerEvent: {}
+[25.102690] (-) TimerEvent: {}
+[25.203156] (-) TimerEvent: {}
+[25.303660] (-) TimerEvent: {}
+[25.404115] (-) TimerEvent: {}
+[25.504567] (-) TimerEvent: {}
+[25.605097] (-) TimerEvent: {}
+[25.705577] (-) TimerEvent: {}
+[25.806069] (-) TimerEvent: {}
+[25.906603] (-) TimerEvent: {}
+[26.007046] (-) TimerEvent: {}
+[26.107550] (-) TimerEvent: {}
+[26.192052] (manual_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/deck/deck_ros2_ws/src/manual_controller/src/manual_controller_component.cpp:3\x1b[m\x1b[K:\n'}
+[26.192370] (manual_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KT ManualController::param(const string&, const T&) [with T = double]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.192514] (manual_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:229:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalue\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[26.192634] (manual_controller) StderrLine: {'line': b'  229 |     return \x1b[01;35m\x1b[Kvalue\x1b[m\x1b[K;\n'}
+[26.192759] (manual_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[26.207675] (-) TimerEvent: {}
+[26.230897] (manual_controller) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libmanual_controller_component.so\x1b[0m\n'}
+[26.307801] (-) TimerEvent: {}
+[26.408148] (-) TimerEvent: {}
+[26.508481] (-) TimerEvent: {}
+[26.608853] (-) TimerEvent: {}
+[26.655282] (manual_controller) StdoutLine: {'line': b'[ 50%] Built target manual_controller_component\n'}
+[26.700980] (manual_controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/manual_controller.dir/src/main.cpp.o\x1b[0m\n'}
+[26.708961] (-) TimerEvent: {}
+[26.809306] (-) TimerEvent: {}
+[26.909697] (-) TimerEvent: {}
+[27.010087] (-) TimerEvent: {}
+[27.110470] (-) TimerEvent: {}
+[27.210807] (-) TimerEvent: {}
+[27.311169] (-) TimerEvent: {}
+[27.411571] (-) TimerEvent: {}
+[27.512121] (-) TimerEvent: {}
+[27.612477] (-) TimerEvent: {}
+[27.712860] (-) TimerEvent: {}
+[27.813265] (-) TimerEvent: {}
+[27.913807] (-) TimerEvent: {}
+[28.014219] (-) TimerEvent: {}
+[28.114788] (-) TimerEvent: {}
+[28.215246] (-) TimerEvent: {}
+[28.315778] (-) TimerEvent: {}
+[28.416491] (-) TimerEvent: {}
+[28.520073] (-) TimerEvent: {}
+[28.620578] (-) TimerEvent: {}
+[28.720977] (-) TimerEvent: {}
+[28.821443] (-) TimerEvent: {}
+[28.921873] (-) TimerEvent: {}
+[29.022581] (-) TimerEvent: {}
+[29.123066] (-) TimerEvent: {}
+[29.223510] (-) TimerEvent: {}
+[29.323915] (-) TimerEvent: {}
+[29.424397] (-) TimerEvent: {}
+[29.524857] (-) TimerEvent: {}
+[29.625238] (-) TimerEvent: {}
+[29.725599] (-) TimerEvent: {}
+[29.825931] (-) TimerEvent: {}
+[29.926300] (-) TimerEvent: {}
+[30.026678] (-) TimerEvent: {}
+[30.127100] (-) TimerEvent: {}
+[30.227474] (-) TimerEvent: {}
+[30.327856] (-) TimerEvent: {}
+[30.428263] (-) TimerEvent: {}
+[30.528669] (-) TimerEvent: {}
+[30.629518] (-) TimerEvent: {}
+[30.730065] (-) TimerEvent: {}
+[30.831582] (-) TimerEvent: {}
+[30.932085] (-) TimerEvent: {}
+[31.032446] (-) TimerEvent: {}
+[31.132872] (-) TimerEvent: {}
+[31.233272] (-) TimerEvent: {}
+[31.333663] (-) TimerEvent: {}
+[31.434066] (-) TimerEvent: {}
+[31.536681] (-) TimerEvent: {}
+[31.637148] (-) TimerEvent: {}
+[31.737625] (-) TimerEvent: {}
+[31.838796] (-) TimerEvent: {}
+[31.939286] (-) TimerEvent: {}
+[32.039699] (-) TimerEvent: {}
+[32.140058] (-) TimerEvent: {}
+[32.240511] (-) TimerEvent: {}
+[32.341015] (-) TimerEvent: {}
+[32.441388] (-) TimerEvent: {}
+[32.541842] (-) TimerEvent: {}
+[32.642302] (-) TimerEvent: {}
+[32.743103] (-) TimerEvent: {}
+[32.843506] (-) TimerEvent: {}
+[32.944009] (-) TimerEvent: {}
+[33.044499] (-) TimerEvent: {}
+[33.144900] (-) TimerEvent: {}
+[33.245303] (-) TimerEvent: {}
+[33.345778] (-) TimerEvent: {}
+[33.446217] (-) TimerEvent: {}
+[33.546612] (-) TimerEvent: {}
+[33.647045] (-) TimerEvent: {}
+[33.747592] (-) TimerEvent: {}
+[33.847992] (-) TimerEvent: {}
+[33.948403] (-) TimerEvent: {}
+[34.048856] (-) TimerEvent: {}
+[34.149294] (-) TimerEvent: {}
+[34.249737] (-) TimerEvent: {}
+[34.350167] (-) TimerEvent: {}
+[34.450568] (-) TimerEvent: {}
+[34.550940] (-) TimerEvent: {}
+[34.651327] (-) TimerEvent: {}
+[34.751691] (-) TimerEvent: {}
+[34.852078] (-) TimerEvent: {}
+[34.952437] (-) TimerEvent: {}
+[35.052823] (-) TimerEvent: {}
+[35.153218] (-) TimerEvent: {}
+[35.253763] (-) TimerEvent: {}
+[35.354209] (-) TimerEvent: {}
+[35.454615] (-) TimerEvent: {}
+[35.555109] (-) TimerEvent: {}
+[35.655488] (-) TimerEvent: {}
+[35.755947] (-) TimerEvent: {}
+[35.856362] (-) TimerEvent: {}
+[35.956809] (-) TimerEvent: {}
+[36.057275] (-) TimerEvent: {}
+[36.157698] (-) TimerEvent: {}
+[36.258137] (-) TimerEvent: {}
+[36.358586] (-) TimerEvent: {}
+[36.459055] (-) TimerEvent: {}
+[36.559513] (-) TimerEvent: {}
+[36.659916] (-) TimerEvent: {}
+[36.760356] (-) TimerEvent: {}
+[36.860812] (-) TimerEvent: {}
+[36.961176] (-) TimerEvent: {}
+[37.061600] (-) TimerEvent: {}
+[37.162036] (-) TimerEvent: {}
+[37.262390] (-) TimerEvent: {}
+[37.362885] (-) TimerEvent: {}
+[37.463339] (-) TimerEvent: {}
+[37.563750] (-) TimerEvent: {}
+[37.664145] (-) TimerEvent: {}
+[37.764577] (-) TimerEvent: {}
+[37.864994] (-) TimerEvent: {}
+[37.965424] (-) TimerEvent: {}
+[38.065815] (-) TimerEvent: {}
+[38.166274] (-) TimerEvent: {}
+[38.266723] (-) TimerEvent: {}
+[38.367193] (-) TimerEvent: {}
+[38.467625] (-) TimerEvent: {}
+[38.568047] (-) TimerEvent: {}
+[38.668431] (-) TimerEvent: {}
+[38.768875] (-) TimerEvent: {}
+[38.869367] (-) TimerEvent: {}
+[38.969864] (-) TimerEvent: {}
+[39.070355] (-) TimerEvent: {}
+[39.170759] (-) TimerEvent: {}
+[39.271225] (-) TimerEvent: {}
+[39.371660] (-) TimerEvent: {}
+[39.472134] (-) TimerEvent: {}
+[39.572541] (-) TimerEvent: {}
+[39.673003] (-) TimerEvent: {}
+[39.773474] (-) TimerEvent: {}
+[39.873947] (-) TimerEvent: {}
+[39.974452] (-) TimerEvent: {}
+[40.074986] (-) TimerEvent: {}
+[40.175430] (-) TimerEvent: {}
+[40.275900] (-) TimerEvent: {}
+[40.376365] (-) TimerEvent: {}
+[40.476834] (-) TimerEvent: {}
+[40.577319] (-) TimerEvent: {}
+[40.677743] (-) TimerEvent: {}
+[40.778170] (-) TimerEvent: {}
+[40.878619] (-) TimerEvent: {}
+[40.979066] (-) TimerEvent: {}
+[41.079552] (-) TimerEvent: {}
+[41.179995] (-) TimerEvent: {}
+[41.280457] (-) TimerEvent: {}
+[41.380913] (-) TimerEvent: {}
+[41.481326] (-) TimerEvent: {}
+[41.581806] (-) TimerEvent: {}
+[41.682240] (-) TimerEvent: {}
+[41.782628] (-) TimerEvent: {}
+[41.883090] (-) TimerEvent: {}
+[41.983452] (-) TimerEvent: {}
+[42.083887] (-) TimerEvent: {}
+[42.184321] (-) TimerEvent: {}
+[42.284785] (-) TimerEvent: {}
+[42.385209] (-) TimerEvent: {}
+[42.485643] (-) TimerEvent: {}
+[42.586091] (-) TimerEvent: {}
+[42.686543] (-) TimerEvent: {}
+[42.786945] (-) TimerEvent: {}
+[42.887388] (-) TimerEvent: {}
+[42.987752] (-) TimerEvent: {}
+[43.088181] (-) TimerEvent: {}
+[43.188570] (-) TimerEvent: {}
+[43.288956] (-) TimerEvent: {}
+[43.389455] (-) TimerEvent: {}
+[43.489947] (-) TimerEvent: {}
+[43.590460] (-) TimerEvent: {}
+[43.690948] (-) TimerEvent: {}
+[43.791390] (-) TimerEvent: {}
+[43.891853] (-) TimerEvent: {}
+[43.992304] (-) TimerEvent: {}
+[44.092760] (-) TimerEvent: {}
+[44.193402] (-) TimerEvent: {}
+[44.293891] (-) TimerEvent: {}
+[44.394297] (-) TimerEvent: {}
+[44.494651] (-) TimerEvent: {}
+[44.595137] (-) TimerEvent: {}
+[44.695571] (-) TimerEvent: {}
+[44.796074] (-) TimerEvent: {}
+[44.896531] (-) TimerEvent: {}
+[44.996920] (-) TimerEvent: {}
+[45.097400] (-) TimerEvent: {}
+[45.197788] (-) TimerEvent: {}
+[45.298154] (-) TimerEvent: {}
+[45.398580] (-) TimerEvent: {}
+[45.499091] (-) TimerEvent: {}
+[45.599599] (-) TimerEvent: {}
+[45.700075] (-) TimerEvent: {}
+[45.800533] (-) TimerEvent: {}
+[45.901038] (-) TimerEvent: {}
+[46.001508] (-) TimerEvent: {}
+[46.102005] (-) TimerEvent: {}
+[46.202380] (-) TimerEvent: {}
+[46.302794] (-) TimerEvent: {}
+[46.403268] (-) TimerEvent: {}
+[46.503703] (-) TimerEvent: {}
+[46.604100] (-) TimerEvent: {}
+[46.704563] (-) TimerEvent: {}
+[46.805012] (-) TimerEvent: {}
+[46.905356] (-) TimerEvent: {}
+[47.005772] (-) TimerEvent: {}
+[47.106184] (-) TimerEvent: {}
+[47.206624] (-) TimerEvent: {}
+[47.306984] (-) TimerEvent: {}
+[47.407409] (-) TimerEvent: {}
+[47.507859] (-) TimerEvent: {}
+[47.608308] (-) TimerEvent: {}
+[47.708745] (-) TimerEvent: {}
+[47.809209] (-) TimerEvent: {}
+[47.909668] (-) TimerEvent: {}
+[48.010111] (-) TimerEvent: {}
+[48.110503] (-) TimerEvent: {}
+[48.210977] (-) TimerEvent: {}
+[48.311410] (-) TimerEvent: {}
+[48.411888] (-) TimerEvent: {}
+[48.512386] (-) TimerEvent: {}
+[48.612792] (-) TimerEvent: {}
+[48.713191] (-) TimerEvent: {}
+[48.813601] (-) TimerEvent: {}
+[48.913925] (-) TimerEvent: {}
+[49.014342] (-) TimerEvent: {}
+[49.114812] (-) TimerEvent: {}
+[49.215282] (-) TimerEvent: {}
+[49.315626] (-) TimerEvent: {}
+[49.416139] (-) TimerEvent: {}
+[49.516720] (-) TimerEvent: {}
+[49.617123] (-) TimerEvent: {}
+[49.717609] (-) TimerEvent: {}
+[49.818022] (-) TimerEvent: {}
+[49.918457] (-) TimerEvent: {}
+[50.019174] (-) TimerEvent: {}
+[50.119744] (-) TimerEvent: {}
+[50.220118] (-) TimerEvent: {}
+[50.320902] (-) TimerEvent: {}
+[50.421291] (-) TimerEvent: {}
+[50.522616] (-) TimerEvent: {}
+[50.623112] (-) TimerEvent: {}
+[50.723571] (-) TimerEvent: {}
+[50.824976] (-) TimerEvent: {}
+[50.925363] (-) TimerEvent: {}
+[51.025716] (-) TimerEvent: {}
+[51.089385] (manual_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/deck/deck_ros2_ws/src/manual_controller/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[51.089828] (manual_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KT ManualController::param(const string&, const T&) [with T = double]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[51.090000] (manual_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/deck/deck_ros2_ws/src/manual_controller/include/manual_controller/manual_controller_component.hpp:229:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalue\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[51.090163] (manual_controller) StderrLine: {'line': b'  229 |     return \x1b[01;35m\x1b[Kvalue\x1b[m\x1b[K;\n'}
+[51.090331] (manual_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[51.125399] (manual_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable manual_controller\x1b[0m\n'}
+[51.125788] (-) TimerEvent: {}
+[51.226063] (-) TimerEvent: {}
+[51.326495] (-) TimerEvent: {}
+[51.426883] (-) TimerEvent: {}
+[51.527288] (-) TimerEvent: {}
+[51.627656] (-) TimerEvent: {}
+[51.658306] (manual_controller) StdoutLine: {'line': b'[100%] Built target manual_controller\n'}
+[51.680561] (manual_controller) CommandEnded: {'returncode': 0}
+[51.727745] (-) TimerEvent: {}
+[51.740229] (manual_controller) JobProgress: {'identifier': 'manual_controller', 'progress': 'install'}
+[51.761064] (manual_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/deck/deck_ros2_ws/build/manual_controller'], 'cwd': '/home/deck/deck_ros2_ws/build/manual_controller', 'env': OrderedDict([('PROFILEHOME', ''), ('KDE_FULL_SESSION', 'true'), ('MAIL', '/var/mail/deck'), ('LANGUAGE', ''), ('USER', 'deck'), ('HOSTNAME', 'ubuntu-22-04.steamdeck'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '230805'), ('XDG_CACHE_HOME', '/home/deck/.cache'), ('SHLVL', '4'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/deck/.local/coinhsl_vendor/lib:/home/deck/ros2_ws/install/twist_switcher/lib:/home/deck/ros2_ws/install/manual_controller/lib:/home/deck/ros2_ws/install/f11robo_bridge/lib:/home/deck/ros2_ws/install/extension_msgs/lib:/home/deck/.local/coinhsl_vendor/lib:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/deck'), ('MOZ_ENABLE_WAYLAND', '1'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/deck/deck_ros2_ws'), ('DESKTOP_SESSION', 'plasma-steamos-oneshot'), ('PIPEWIRE_RUNTIME_DIR', '/dev/null'), ('ROS_PYTHON_VERSION', '3'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/deck/.gtkrc:/home/deck/.config/gtkrc'), ('GTK_MODULES', 'canberra-gtk-module'), ('KDE_SESSION_VERSION', '5'), ('PS1', '\\[\\e]0;\\u@\\h: \\w\\a\\]\\[\\e[0m\\]\\[\\e[1m\\]\\[\\e[32m\\]\\u@\\h\\[\\e[22m\\]\\[\\e[34m\\]<\\[\\e[1m\\]${ros_env_name}\\[\\e[22m\\]>\\[\\e[97m\\]\\[\\e[22m\\][\\[\\e[36m\\]\\[\\e[1m\\]$(branch_name)\\[\\e[97m\\]$(parse_git_fg)\\[\\e[97m\\]\\[\\e[22m\\]]\\[\\e[97m\\]:\\[\\e[34m\\]\\w\\[\\e[1m\\]\\[\\e[97m\\]$ \\[\\e[0m\\]'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('MANAGERPID', '990'), ('DISTROBOX_ENTER_PATH', '/usr/bin/distrobox-enter'), ('SYSTEMD_EXEC_PID', '5019'), ('XDG_STATE_HOME', '/home/deck/.local/state'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('container', 'podman'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('_colcon_cd_root', '/home/deck/'), ('DEBUGINFOD_URLS', 'https://debuginfod.archlinux.org'), ('COLCON_PREFIX_PATH', '/home/deck/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'deck'), ('WINDOWID', '104857613'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('JOURNAL_STREAM', '8:73275'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('MEMORY_PRESSURE_WATCH', '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service/memory.pressure'), ('XDG_SESSION_CLASS', 'user'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('ros_env_name', 'deck_ros2_ws'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/deck/.gtkrc-2.0:/home/deck/.config/gtkrc-2.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/steamdeck:@/tmp/.ICE-unix/4958,unix/steamdeck:/tmp/.ICE-unix/4958'), ('INVOCATION_ID', '2b885411df544ea7b6b6a41ce30dc0d4'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('XDG_DATA_HOME', '/home/deck/.local/share'), ('XDG_CONFIG_HOME', '/home/deck/.config'), ('LIBVA_DRIVER_NAME', 'radeonsi'), ('XAUTHORITY', '/run/user/1000/e5f63b8a-a411-4a19-a02f-58d8a952b6db'), ('MOZ_USE_XINPUT2', '1'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble:/home/deck/ros2_ws/install/twist_switcher:/home/deck/ros2_ws/install/manual_controller:/home/deck/ros2_ws/install/ign_gazebo_sim:/home/deck/ros2_ws/install/f11robo_bridge:/home/deck/ros2_ws/install/data_logger:/home/deck/ros2_ws/install/extension_node:/home/deck/ros2_ws/install/extension_msgs:/home/deck/ros2_ws/install/extension_ament_node:/home/deck/ros2_ws/install/extension_ament:/home/deck/ros2_ws/install/common_lib:/home/deck/ros2_ws/install/ament_cmake_auto_mod'), ('SHELL', '/usr/bin/bash'), ('DRACUT_NO_XATTR', '1'), ('KONSOLE_DBUS_SERVICE', ':1.101'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/deck/deck_ros2_ws/build/manual_controller'), ('CONTAINER_ID', 'ubuntu-22-04'), ('QT_QPA_PLATFORM', 'xcb'), ('XDG_CONFIG_DIRS', '/home/deck/.config/kdedefaults:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/home/deck/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/deck/ros2_ws/install/extension_msgs/local/lib/python3.10/dist-packages'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('MEMORY_PRESSURE_WRITE', 'c29tZSAyMDAwMDAgMjAwMDAwMAA='), ('ROS_WORKSPACE', '/home/deck/deck_ros2_ws'), ('EDITOR', 'vim'), ('CMAKE_PREFIX_PATH', '/home/deck/ros2_ws/install/twist_switcher:/home/deck/ros2_ws/install/manual_controller:/home/deck/ros2_ws/install/ign_gazebo_sim:/home/deck/ros2_ws/install/f11robo_bridge:/home/deck/ros2_ws/install/data_logger:/home/deck/ros2_ws/install/extension_node:/home/deck/ros2_ws/install/extension_msgs:/home/deck/ros2_ws/install/extension_ament_node:/home/deck/ros2_ws/install/extension_ament:/home/deck/ros2_ws/install/common_lib:/home/deck/ros2_ws/install/ament_cmake_auto_mod:/opt/ros/humble')]), 'shell': False}
+[51.779684] (manual_controller) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[51.780321] (manual_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[51.781665] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/manual_controller_param.yaml\n'}
+[51.806049] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/steamdeck_manual_controller_param.yaml\n'}
+[51.827879] (-) TimerEvent: {}
+[51.831466] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//config/twist_switcher_param.yaml\n'}
+[51.852567] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/controller.launch.py\n'}
+[51.872528] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/steamdeck.launch.py\n'}
+[51.892003] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//launch/steamdeck_aisl.launch.py\n'}
+[51.912213] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller//rviz/deck.rviz\n'}
+[51.927999] (-) TimerEvent: {}
+[51.933168] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/controller.hpp\n'}
+[51.952129] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/logi_xbox.hpp\n'}
+[51.970376] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/ps4.hpp\n'}
+[51.991660] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/controller/steamdeck.hpp\n'}
+[52.015874] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/include/manual_controller/manual_controller_component.hpp\n'}
+[52.028138] (-) TimerEvent: {}
+[52.044890] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/library_path.sh\n'}
+[52.068253] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/library_path.dsv\n'}
+[52.097589] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/lib/libmanual_controller_component.so\n'}
+[52.117606] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/lib/manual_controller/manual_controller\n'}
+[52.128276] (-) TimerEvent: {}
+[52.137643] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/package_run_dependencies/manual_controller\n'}
+[52.156241] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/parent_prefix_path/manual_controller\n'}
+[52.175239] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/ament_prefix_path.sh\n'}
+[52.193937] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/ament_prefix_path.dsv\n'}
+[52.211607] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/path.sh\n'}
+[52.228394] (-) TimerEvent: {}
+[52.228994] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/environment/path.dsv\n'}
+[52.248303] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.bash\n'}
+[52.266257] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.sh\n'}
+[52.283283] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.zsh\n'}
+[52.300680] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/local_setup.dsv\n'}
+[52.318746] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/package.dsv\n'}
+[52.328502] (-) TimerEvent: {}
+[52.337027] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/packages/manual_controller\n'}
+[52.358017] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/ament_index/resource_index/rclcpp_components/manual_controller\n'}
+[52.378923] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[52.399663] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[52.418600] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[52.428615] (-) TimerEvent: {}
+[52.435448] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/manual_controllerConfig.cmake\n'}
+[52.453622] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/cmake/manual_controllerConfig-version.cmake\n'}
+[52.470184] (manual_controller) StdoutLine: {'line': b'-- Symlinking: /home/deck/deck_ros2_ws/install/manual_controller/share/manual_controller/package.xml\n'}
+[52.490182] (manual_controller) CommandEnded: {'returncode': 0}
+[52.528729] (-) TimerEvent: {}
+[52.583069] (manual_controller) JobEnded: {'identifier': 'manual_controller', 'rc': 0}
+[52.584253] (-) EventReactorShutdown: {}
