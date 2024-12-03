@@ -3,3 +3,8 @@ repositories:
         type: git
         url: https://github.com/eieioF11/manual_controller.git
         version: feat/steamdeck
+   src/extension_rviz_plugins:
+        type: git
+        url: https://github.com/eieioF11/extension_rviz_plugins.git
+        version: main
+
